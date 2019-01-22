@@ -1,0 +1,377 @@
+/*background*/
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#555, #aaa9a9a2);
+  background-size: cover; 
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(20, 5%);
+}
+
+/*multipages*/
+.title{
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  background: #bababaa2;
+  grid-column: 3 / span 16;
+  grid-row: 4 / 6;
+}
+.text{
+  font-size: 25px;
+  color: white;
+}
+
+/*navbar*/
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+  grid-column: 1 / span 20;
+  grid-row: 1 / 3;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.active-page{
+  background-color: rgba(0, 191, 255, 0.829);
+  color: #f2f2f2;
+}
+.home{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: none;
+}
+#homebtn:hover .home{
+  color: white;
+  animation: typewriter-animation 0.4s steps(4, end);
+}
+.about{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: none;
+}
+#aboutbtn:hover .about{
+  color: white;
+  animation: typewriter-animation 0.4s steps(4, end);
+}
+.projects{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: none;
+}
+#projectsbtn:hover .projects{
+  color: white;
+  animation: typewriter-animation 0.4s steps(4, end);
+}
+.experience{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: none;
+}
+#experiencebtn:hover .experience{
+  color: white;
+  animation: typewriter-animation 0.4s steps(4, end);
+}
+.contact{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: none;
+}
+#contactbtn:hover .contact{
+  color: white;
+  animation: typewriter-animation 0.4s steps(4, end);
+}
+.other-page:hover{
+  background-color: rgba(138, 131, 131, 0.829);
+  color: white;
+}
+@keyframes typewriter-animation{
+  from{width: 0%;}
+  to{width: 100%;}
+}
+#menu-btn{
+  float: right;
+  background: none;
+  outline: none;
+  color: white;
+  border: none;
+  font-size: 40px;
+  display: none;
+}
+
+/*index page*/
+#name{
+  font-size: 90px;
+  font-weight: bold;
+  color:#f2f2f2;
+  text-align: center;
+  grid-column: 6 / span 10;
+  grid-row: 7 / 8;
+}
+
+/*about page*/
+#about-box{
+  grid-column: 4 / span 14;
+  grid-row: 6 / 9;
+}
+#title2{
+  grid-column: 3 / span 16;
+  grid-row: 9 / 11;
+}
+#education-box{
+  grid-column: 4 / span 14;
+  grid-row: 11 / 14;
+}
+#title3{
+  grid-column: 3 / span 16;
+  grid-row: 15 / 17;
+}
+#interests-box{
+  grid-column: 4 / span 14;
+  grid-row: 17 / 20;
+}
+
+/*projects page*/
+#project1-container{
+  grid-column: 2 / span 6;
+  grid-row: 7 / 18;
+  background: #bababaa2;
+}
+#project2-container{
+  grid-column: 8 / span 6;
+  grid-row: 7 / 18;
+  background: #837f7fa2;
+}
+#project3-container{
+  grid-column: 14 / span 6;
+  grid-row: 7 / 18;
+  background: #bababaa2;
+}
+.sub-title{
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+.txt{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+/*experience page*/
+.graph-bars{
+  width: 500px;
+  height: 150px;
+}
+#python-box{
+  background: #bababaa2;
+  grid-column: 1 / span 10;
+  grid-row: 7 / span 6;
+}
+#python-img{
+  padding-top: 20px;
+  width: 150px;
+  height: 150px;
+  margin-left: 2%;
+  float: left;
+}
+#python-bar{
+  background-color: yellow;
+  margin-top: 75px;
+  margin-left: 200px;
+  height: 50px;
+  width: 200px;
+  z-index: 4;
+  animation: python-skill 2s;
+}
+#python-graph{
+  padding-top: 20px;
+  padding-left: 45px;
+  grid-column: 3 / span 6;
+  grid-row: 7 / span 3;
+  z-index: 3;
+}
+#python-gn{
+  grid-column: 4 / span 9;
+  grid-row: 7 / span 3;
+}
+#js-box{
+  background: #837f7fa2;
+  grid-column: 1 / span 10;
+  grid-row: 13 / span 6;
+}
+#js-img{
+  padding-top: 20px;
+  width: 150px;
+  height: 150px;
+  margin-left: 2%;
+  float: left;
+}
+#js-bar{
+  background-color: rgb(255, 102, 0);
+  margin-top: 75px;
+  margin-left: 200px;
+  height: 50px;
+  width: 100px;
+  z-index: 4;
+  animation: java-skill 2s;
+}
+#js-graph{
+  padding-top: 20px;
+  padding-left: 45px;
+  grid-column: 3 / span 6;
+  grid-row: 13 / span 3;
+  z-index: 3;
+}
+#js-gn{
+  grid-column: 4 / span 9;
+  grid-row: 13 / span 3;
+}
+#html-box{
+  background: #837f7fa2;
+  grid-column: 11 / span 10;
+  grid-row: 7 / span 6;
+}
+#html-img{
+  padding-top: 20px;
+  width: 150px;
+  height: 150px;
+  margin-left: 2%;
+  float: left;
+}
+#html-bar{
+  background-color: yellowgreen;
+  margin-top: 75px;
+  margin-left: 200px;
+  height: 50px;
+  width: 250px;
+  z-index: 4;
+  animation: html-skill 2s;
+}
+#html-graph{
+  padding-top: 20px;
+  padding-left: 45px;
+  grid-column: 13 / span 6;
+  grid-row: 7 / span 3;
+  z-index: 3;
+}
+#html-gn{
+  grid-column: 14 / span 9;
+  grid-row: 7 / span 3;
+}
+#css-box{
+  background: #bababaa2;
+  grid-column: 11 / span 10;
+  grid-row: 13 / span 6;
+}
+#css-img{
+  padding-top: 20px;
+  width: 150px;
+  height: 150px;
+  margin-left: 2%;
+  float: left;
+}
+#css-bar{
+  background-color: rgb(187, 255, 0);
+  margin-top: 75px;
+  margin-left: 200px;
+  height: 50px;
+  width: 200px;
+  z-index: 4;
+  animation: css-skill 2s;
+}
+#css-graph{
+  padding-top: 20px;
+  padding-left: 45px;
+  grid-column: 13 / span 6;
+  grid-row: 13 / span 3;
+  z-index: 3;
+}
+#css-gn{
+  grid-column: 14 / span 9;
+  grid-row: 13 / span 3;
+}
+@keyframes python-skill{
+  0%{width: 10px};
+  100%{width: 200px};
+}
+@keyframes java-skill{
+  0%{width: 10px};
+  100%{width: 100px};
+}
+@keyframes html-skill{
+  0%{width: 10px};
+  100%{width: 250px};
+}
+@keyframes css-skill{
+  0%{width: 10px};
+  100%{width: 200px};
+}
+.graph-numbers{
+  font-size: 25px;
+  color: white;
+  z-index: 10;
+}
+.num1{
+  padding-left: 40px;
+  padding-right: 70px;
+}
+.num-other{
+  padding-right: 70px;
+}
+#graph-legend{
+  padding-top: 10px;
+  padding-left: 20px;
+  grid-column: 6 / span 10;
+  grid-row: 19/ span 1;
+}
+#graph-legend span{
+  font-size: 30px;
+  color: black;
+}
+
+/*contact css*/
+.stuff{ 
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+#link{
+  color: white;
+  text-decoration: none;
+}
+#link:hover{
+  color: aqua;
+}
+#contact-txt{
+  grid-column: 6 / span 11;
+  grid-row: 7 / span 7;
+}
+
